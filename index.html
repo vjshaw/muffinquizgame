@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muffin Quiz Show</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="game-container">
+    <header>
+      <img src="muffinmouthforNFTs.png" alt="Muffin Host" class="host-image">
+      <h1>Muffin Quiz Show</h1>
+      <p>Test your knowledge and climb the leaderboard!</p>
+    </header>
+
+    <main>
+      <div id="quiz-area">
+        <div id="question"></div>
+        <div id="answers">
+          <button class="answer-button" data-choice="A"></button>
+          <button class="answer-button" data-choice="B"></button>
+          <button class="answer-button" data-choice="C"></button>
+          <button class="answer-button" data-choice="D"></button>
+        </div>
+      </div>
+      <div id="score-area">
+        <p>Score: <span id="score">0</span></p>
+      </div>
+    </main>
+
+    <aside>
+      <h2>Leaderboard</h2>
+      <ol id="leaderboard"></ol>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
